@@ -10,7 +10,7 @@
     <table class="table mt-2">
         <thead>
             <tr>
-                <th>リスト</th>
+                <th>リストです</th>
             </tr>
         </thead>
         <tbody>
