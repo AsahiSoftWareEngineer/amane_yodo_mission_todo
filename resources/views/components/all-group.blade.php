@@ -7,6 +7,13 @@
         </div>
     </form>
 
+    @if($tasks->isEmpty())
+    <div class="pt-4">
+        <div class="alert alert-success" role="alert">タスクがありません。追加してください。</div>
+    </div>
+    @endif
+
+    @if(!($tasks->isEmpty()))
     <table class="table mt-2">
         <thead>
             <tr>
@@ -92,6 +99,7 @@
             @endforeach
         </tbody>
     </table>
+    @endif
 </div>
 
 
