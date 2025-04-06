@@ -4,7 +4,7 @@
         <x-sidebar>
         </x-sidebar>
     </x-slot>
-  
+    
     <x-list-item :userLists="$userLists">
     </x-list-item>
     

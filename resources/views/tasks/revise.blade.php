@@ -4,7 +4,7 @@
         <x-sidebar>
         </x-sidebar>
     </x-slot>
-  
+    
     <x-revise :task="$task" :userLists="$userLists">
     </x-revise>
     
