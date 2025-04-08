@@ -105,35 +105,33 @@ class TaskController extends Controller
             if($cmd === "up")
             {
                 $moveTasks = MissionTodo::where('sort_order','<',$currentTask->sort_order)
-                                    ->orderBy('sort_order','desc');
+                                    ->orderBy('sort_order','desc')
+                                    ->first();
             }
             elseif($cmd === "down")
             {
                 $moveTasks =  MissionTodo::where('sort_order','>',$currentTask->sort_order)
-                                    ->orderBy('sort_order','asc');
+                                    ->orderBy('sort_order','asc')
+                                    ->first();
             }
         }
     
         if($moveTasks)
         {
-            $moveTasks = $moveTasks->first();
-            $currentTask->sort_order = $moveTasks->sort_order;
+            if($cmd === "up")
+            {
+                $currentTask->sort_order = $moveTasks->sort_order;
+                $moveTasks->sort_order += 1;
+            }
+            elseif($cmd === "down")
+            {
+                $currentTask->sort_order = $moveTasks->sort_order;
+                $moveTasks->sort_order -= 1;
+            }
+        
+            $currentTask->save();
+            $moveTasks->save();
         }
-
-        if($cmd === "up")
-        {
-            $currentTask->sort_order = $moveTasks->sort_order;
-            $moveTasks->sort_order += 1;
-        }
-        elseif($cmd === "down")
-        {
-            $currentTask->sort_order = $moveTasks->sort_order;
-            $moveTasks->sort_order -= 1;
-        }
-    
-        $currentTask->save();
-        $moveTasks->save();
-
 
         if($deadline)
         {
