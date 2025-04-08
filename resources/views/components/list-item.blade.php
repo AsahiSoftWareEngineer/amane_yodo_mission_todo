@@ -7,6 +7,13 @@
         </div>
     </form>
     
+    @if($userLists->isEmpty())
+    <div class="pt-4">
+        <div class="alert alert-success" role="alert">リストがありません。追加してください。</div>
+    </div>
+    @endif
+
+    @if(!($userLists->isEmpty()))
     <table class="table mt-2">
         <thead>
             <tr>
@@ -52,4 +59,5 @@
             @endforeach
         </tbody>
     </table>
+    @endif
 </div>

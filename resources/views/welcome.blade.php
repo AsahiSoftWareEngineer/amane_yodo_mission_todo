@@ -60,6 +60,7 @@
                                 <img src="{{ asset('img/personal goals checklist-amico.png')}}" alt="" class="img-fluid w-75">
                                     <h3 class="text-white">日々のタスクをMission Todoで管理しよう</h3>
                                         <h5 class="text-white pt-2">操作が簡単だから継続化しやすい</h5>
+                                        <a class="text-white" href="https://storyset.com/people">People illustrations by Storyset</a>
                         </div>
                 </div>
 

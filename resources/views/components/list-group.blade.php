@@ -1,4 +1,12 @@
 <div class="container-xl mt-4">
+    @if($tasks->isEmpty())
+        <h5>リスト別タスク一覧</h5>
+            <div class="pt-2">
+                <div class="alert alert-success" role="alert">現在、リストを設定しているタスクはありません。</div>
+            </div>
+    @endif
+
+    @if(!($tasks->isEmpty()))
     <table class="table mt-2">
         <thead>
             <tr>
@@ -88,4 +96,5 @@
             @endforeach
         </tbody>
     </table>
+    @endif
 </div>

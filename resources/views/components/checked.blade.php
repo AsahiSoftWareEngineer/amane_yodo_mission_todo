@@ -1,4 +1,19 @@
-<div class="container-xl mt-4">    
+<div class="container-xl mt-4">
+    @if($tasks->isEmpty())
+        @if($checked && $checked ==="true")
+            <h5>実行済みタスク一覧</h5>
+                <div class="pt-2">
+                    <div class="alert alert-success" role="alert">実行済みのタスクはありません。</div>
+                </div>
+        @else
+        <h5>未実行タスク一覧</h5>
+                <div class="pt-2">
+                    <div class="alert alert-success" role="alert">未実行タスクはありません。</div>
+                </div>
+        @endif
+    @endif
+
+    @if(!($tasks->isEmpty()))    
     <table class="table mt-2">
         <thead>
             <tr>
@@ -93,4 +108,5 @@
             @endforeach
         </tbody>
     </table>
+    @endif
 </div>
