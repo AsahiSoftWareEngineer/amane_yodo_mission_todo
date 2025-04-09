@@ -21,7 +21,15 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-            }   
+            } 
+            * {
+            margin :0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding: 0;
+            }
         </style>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -54,19 +62,19 @@
 
             <div class="row vh-100">
 
-                <div class="col-6 bg-success d-flex flex-column align-items-center justify-content-center">
+                <div class="col-6 pb-4 px-3 bg-success d-flex flex-column align-items-center justify-content-center position-relative">
 
-                        <div class="text-center mb-5">
+                        <div class="text-center">
                                 <img src="{{ asset('img/personal goals checklist-amico.png')}}" alt="" class="img-fluid w-75">
                                     <h3 class="text-white">日々のタスクをMission Todoで管理しよう</h3>
                                         <h5 class="text-white pt-2">操作が簡単だから継続化しやすい</h5>
-                                        <a class="text-white" href="https://storyset.com/people">People illustrations by Storyset</a>
-                        </div>
+                                    </div>
+                                    <a class="text-white position-absolute bottom-0 start-0" href="https://storyset.com/people">People illustrations by Storyset</a>
                 </div>
 
 
                 <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <div class="text-center mb-3">
+                    <div class="text-center">
                             <h2 class="text-success fw-bold">Start Mission Todo</h2>
                                 <p class="pt-3">ご入力いただいたメールアドレスでアカウントを作成します</p>
                                     <p class="pb-2">ご利用は無料です</p>
