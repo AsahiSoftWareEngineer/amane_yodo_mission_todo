@@ -1,8 +1,8 @@
 <x-main>
 
     <x-slot name="header">
-        <x-sidebar>
-        </x-sidebar>
+        <x-header>
+        </x-header>
     </x-slot>
     
     <x-revise :task="$task" :userLists="$userLists">
