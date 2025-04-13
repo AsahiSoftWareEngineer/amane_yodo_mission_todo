@@ -10,7 +10,7 @@
         <div class="w-50 bg-success d-flex flex-column align-items-center justify-content-center position-relative">
 
             <div class="text-center">
-                <img src="{{ asset('storage/img/personal-goals-checklist-amico.png') }}" class="img-fluid w-75">
+                <img src="{{ asset('img/personal-goals-checklist-amico.png') }}" class="img-fluid w-75">
                     <h3 class="text-white">日々のタスクをMission Todoで管理しよう</h3>
                         <h5 class="text-white pt-2">操作が簡単だから継続化しやすい</h5>
             </div>
