@@ -1,8 +1,8 @@
 <x-main>
 
     <x-slot name="header">
-        <x-sidebar>
-        </x-sidebar>
+        <x-side-bar>
+        </x-side-bar>
     </x-slot>
 
     @if(!isset($checked) && !isset($deadline) && !isset($listId))
