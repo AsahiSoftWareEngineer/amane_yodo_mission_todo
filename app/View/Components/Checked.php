@@ -29,6 +29,6 @@ class Checked extends Component
      */
     public function render()
     {
-        return view('components.checked');
+        return view('components.tasks.checked');
     }
 }

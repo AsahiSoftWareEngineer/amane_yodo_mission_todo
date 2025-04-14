@@ -25,6 +25,6 @@ class ListItem extends Component
      */
     public function render()
     {
-        return view('components.list-item');
+        return view('components.lists.list-item');
     }
 }

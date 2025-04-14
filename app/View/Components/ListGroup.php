@@ -25,6 +25,6 @@ class ListGroup extends Component
      */
     public function render()
     {
-        return view('components.list-group');
+        return view('components.tasks.list-group');
     }
 }

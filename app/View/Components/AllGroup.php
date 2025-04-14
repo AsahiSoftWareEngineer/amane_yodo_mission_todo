@@ -26,6 +26,6 @@ class AllGroup extends Component
      */
     public function render()
     {
-        return view('components.all-group');
+        return view('components.common.all-group');
     }
 }

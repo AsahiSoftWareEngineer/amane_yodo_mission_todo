@@ -25,6 +25,6 @@ class ReviseList extends Component
      */
     public function render()
     {
-        return view('components.revise-list');
+        return view('components.lists.revise-list');
     }
 }

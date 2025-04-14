@@ -25,6 +25,6 @@ class Deadline extends Component
      */
     public function render()
     {
-        return view('components.deadline');
+        return view('components.tasks.deadline');
     }
 }
