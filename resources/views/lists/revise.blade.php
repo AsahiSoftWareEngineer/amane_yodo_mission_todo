@@ -1,8 +1,8 @@
 <x-main>
 
     <x-slot name="header">
-        <x-header>
-        </x-header>
+        <x-sidebar>
+        </x-sidebar>
     </x-slot>
     
     <x-revise-list :currentList="$currentList">
