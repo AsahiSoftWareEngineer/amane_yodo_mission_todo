@@ -19,10 +19,6 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('welcome');
-
 Route::get('/', function () {
     if (Auth::check()) {
         return redirect('/tasks'); // ログイン済みならタスク画面へ
